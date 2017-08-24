@@ -28,8 +28,7 @@ export default class Mortgage {
                 balance = balance - principalM;
             }
             amortization.push({ principalY, interestY, balance });
-        }
-        console.log("hii");
+        }       
         return amortization;
     };
 
