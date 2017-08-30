@@ -3,26 +3,25 @@
 
  module.exports = {
      entry: {
-        app : './script/main.js',
-        ratefinder : './script/ratefinder.js'
+         app: './script/main.js',
+         ratefinder: './script/ratefinder.js'
      },
      output: {
          path: path.resolve(__dirname, 'build'),
          filename: '[name].bundle.js'
      },
      module: {
-         loaders: [
-             {
-                 test: /\.js$/,
-                 loader: 'babel-loader',
-                 query: {
-                     presets: ['es2015']
-                 }
+         loaders: [{
+             test: /\.js$/,
+             loader: 'babel-loader',
+             query: {
+                 presets: ['es2015']
              }
-         ]
+         }]
      },
      stats: {
          colors: true
      },
-     devtool: 'source-map'
+     devtool: 'source-map',
+     watch: true
  };
