@@ -24,4 +24,7 @@
      },
      devtool: 'source-map',
      watch: true
+    //  ,devServer: {
+    //      inline: true
+    //  }
  };
